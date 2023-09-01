@@ -1,0 +1,15 @@
+No Traffic
+	4 bus , 1 car, 13 RSU
+	1) Bus and Car Same Speed 10m/s
+	2) Bus at 5m/s and Car at 10m/s
+
+Medium Traffic
+	4 bus, 1 car, 13RSUs, 37 additional trips starting at 0 seconds
+	1) Bus, car, additonal vehs all same speed 10m/s
+	2) Bus and additional vehicles at 5m/s and car at 10m/s
+
+Heavy Traffic
+	4 bus, 1 car, 13 RSUs, 37 additional trips starting at 0 seconds
+	1) Bus, car, additonal vehs all same speed 2m/s
+	2) Bus and additional vehicles at 2m/s and Car at 5m/s
+	

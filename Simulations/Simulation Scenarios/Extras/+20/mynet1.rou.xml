@@ -1,0 +1,25 @@
+<routes>
+	<vType id="fastBus" maxSpeed="3.71"/>
+	<vType id="slowBus" maxSpeed="4"/>
+	<trip id="car1" type="fastBus" depart="0.00" from="E0" to="E5" via="-E1 E2"/>
+	<trip id="bus0" type="slowBus" depart="0.00" from="-E0" to="-E0"/>
+    <trip id="bus1" type="slowBus" depart="0.00" from="E10" to="E3" via="-E1"/>
+    <trip id="bus2" type="slowBus" depart="0.00" from="-E4" to="E7" via="E2"/>
+    <trip id="bus3" type="slowBus" depart="0.00" from="-E6" to="E5"/>
+    <trip id="bus4" type="slowBus" depart="0.00" from="E0" to="-E10"/>
+    <trip id="bus5" type="slowBus" depart="0.00" from="-E3" to="-E10" via="E1"/>
+    <trip id="bus6" type="slowBus" depart="0.00" from="-E7" to="E4" via="-E2"/>
+    <trip id="bus7" type="slowBus" depart="0.00" from="E10" to="E4" via="-E1"/>
+    <trip id="bus8" type="slowBus" depart="0.00" from="E10" to="E8" via="-E1 E3 -E9"/>
+    <trip id="10" type="slowBus" depart="0.00" from="-E3" to="E4"/>
+    <trip id="11" type="slowBus" depart="0.00" from="-E3" to="E9"/>
+    <trip id="13" type="slowBus" depart="0.00" from="E3" to="E7"/>
+    <trip id="14" type="slowBus" depart="0.00" from="-E3" to="E2"/>
+    <trip id="15" type="slowBus" depart="0.00" from="-E5" to="E4"/>
+    <trip id="16" type="slowBus" depart="0.00" from="-E4" to="E8"/>
+    <trip id="17" type="slowBus" depart="0.00" from="-E1" to="E6"/>
+    <trip id="18" type="slowBus" depart="0.00" from="E0" to="-E10"/>
+    <trip id="19" type="slowBus" depart="0.00" from="E0" to="-E10"/>
+    <trip id="20" type="slowBus" depart="0.00" from="-E6" to="E6"/>
+    <trip id="21" type="slowBus" depart="0.00" from="E2" to="-E3"/>
+</routes>

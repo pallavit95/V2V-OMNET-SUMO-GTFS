@@ -1,0 +1,7 @@
+<routes>
+	<vType id="slowBus" maxSpeed="5"/>
+	<vType id="fastBus" maxSpeed="5"/>
+	<trip id="car1" type="fastBus" depart="0.00" from="E0" to="E5" via="-E1 E2"/>
+    <trip id="bus5" type="slowBus" depart="0.00" from="-E3" to="-E10" via="E1"/>
+    <trip id="bus2" type="slowBus" depart="0.00" from="-E4" to="E7" via="E2"/>
+</routes>

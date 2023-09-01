@@ -1,0 +1,13 @@
+CarId,RSUId,MessageCount,Timestamp
+car1,rsu[0].mobility,2,1,2
+car1,rsu[1].mobility,5,1,2,3,4,5
+car1,rsu[2].mobility,4,5,6,7,8
+car1,rsu[3].mobility,4,9,10,11,12
+car1,rsu[4].mobility,6,10,11,12,13,14,15
+car1,rsu[5].mobility,7,12,13,14,15,16,17,18
+car1,rsu[6].mobility,9,15,16,17,18,19,20,21,22,23
+car1,rsu[7].mobility,3,18,25,26
+car1,rsu[8].mobility,7,42,43,44,45,46,47,48
+car1,rsu[9].mobility,1,61
+car1,rsu[11].mobility,2,66,67
+car1,rsu[12].mobility,2,70,71

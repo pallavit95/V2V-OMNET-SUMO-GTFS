@@ -1,0 +1,78 @@
+Base Case:
+	200m-280m range
+	time_diff is 44.61seconds
+	Car-Speed = 5.3m/s
+	Everyone else moves at 5.3m/s
+
+Scenario 1: (Positive Deviations)
+	1.1
+		Time differnce is +1 seconds
+		time_diff = 45.61 sec
+		new_car_speed = 5.26m/s
+	
+	1.2
+		Time difference is +2 seconds
+		time_diff = 46.61 sec
+		new_car_speed = 5.14m/s
+	
+	1.3
+		Time difference is +3 seconds
+		time_diff = 47.61 sec
+		new_car_Speed = 5.04m/s
+
+Scenario 2: (Negative Deviations)
+	2.1
+		Time difference is -1 seconds
+		tim_diff = 43.61 sec
+		new_car_speed = 5.5m/s
+
+	2.2
+		Time difference is -2 seconds
+		time_diff = 42.61 sec
+		new_car_speed = 5.63m/s
+	
+	2.3
+		Time difference is -3 seconds
+		time_diff = 41.61 sec
+		new_car_speed = 5.76m/s
+
+So let's say that the prediction says 44.61 seconds and car speed is 5.3m/s , but actually there's traffic
+Scenario 3: Medium/heavy Traffic
+	3.1 - 9 bus ,1 car, 10 vehicles
+		Time difference is +10
+		time_diff = 54.61 sec
+		new_car_speed = 4.39m/s
+		Everyone else moves at 4.5m/s
+
+	3.2 - 9 bus ,1 car, 10 vehicles
+		Time difference is +20
+		time_diff = 64.61 sec
+		new_car_speed = 3.71m/s
+		Everyone else moves at 4m/s
+
+	3.3 - 9 bus ,1 car, 10 vehicles
+		Time difference is +30
+		time_diff = 54.61 sec
+		new_car_speed = 3.21m/s	
+		Everyone else moves at 3.5m/s		
+		
+		
+and let's say the roads are empty 
+Scenario 4: Medium Traffic
+	4.1 - 9 bus ,1 car
+		Time difference is -10
+		time_diff = 34.61 sec
+		new_car_speed = 6.93m/s
+		Everyone else moves at 7m/s
+
+	4.2 - 9 bus ,1 car, 17 vehicles
+		Time difference is -20
+		time_diff = 24.61 sec
+		new_car_speed = 9.75m/s
+		Everyone else moves at 10m/s
+
+	4.3 - 9 bus ,1 car, 17 vehicles
+		Time difference is -30
+		time_diff = 14.61 sec
+		new_car_speed = 16.42m/s	
+		Everyone else moves at 17m/s

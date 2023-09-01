@@ -1,0 +1,14 @@
+<routes>
+	<vType id="fastBus" maxSpeed="5.8"/>
+	<vType id="slowBus" maxSpeed="5.3"/>
+	<trip id="car1" type="fastBus" depart="0.00" from="E0" to="E5" via="-E1 E2"/>
+	<trip id="bus0" type="slowBus" depart="0.00" from="-E0" to="-E0"/>
+    <trip id="bus1" type="slowBus" depart="0.00" from="E10" to="E3" via="-E1"/>
+    <trip id="bus2" type="slowBus" depart="0.00" from="-E4" to="E7" via="E2"/>
+    <trip id="bus3" type="slowBus" depart="0.00" from="-E6" to="E5"/>
+    <trip id="bus4" type="slowBus" depart="0.00" from="E0" to="-E10"/>
+    <trip id="bus5" type="slowBus" depart="0.00" from="-E3" to="-E10" via="E1"/>
+    <trip id="bus6" type="slowBus" depart="0.00" from="-E7" to="E4" via="-E2"/>
+    <trip id="bus7" type="slowBus" depart="0.00" from="E10" to="E4" via="-E1"/>
+    <trip id="bus8" type="slowBus" depart="0.00" from="E10" to="E8" via="-E1 E3 -E9"/>
+</routes>

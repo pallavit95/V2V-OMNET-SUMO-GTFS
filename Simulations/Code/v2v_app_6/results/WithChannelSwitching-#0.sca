@@ -1,0 +1,724 @@
+version 2
+run WithChannelSwitching-0-20230811-19:27:20-19660
+attr configname WithChannelSwitching
+attr datetime 20230811-19:27:20
+attr experiment WithChannelSwitching
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network IntersectionScenario
+attr processid 19660
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.**.nic.mac1609_4.useServiceChannel true
+param *.node[*].appl.dataOnSch true
+param *.rsu[*].appl.dataOnSch true
+param **.debug false
+param **.coreDebug false
+param *.playgroundSizeX 1000m
+param *.playgroundSizeY 1000m
+param *.playgroundSizeZ 100m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"mynet1.launchd.xml\")"
+param *.rsu[0].mobility.x 16
+param *.rsu[0].mobility.y 246
+param *.rsu[0].mobility.z 0
+param *.rsu[1].mobility.x 46
+param *.rsu[1].mobility.y 246
+param *.rsu[1].mobility.z 0
+param *.rsu[2].mobility.x 76
+param *.rsu[2].mobility.y 246
+param *.rsu[2].mobility.z 0
+param *.rsu[3].mobility.x 130
+param *.rsu[3].mobility.y 236
+param *.rsu[3].mobility.z 0
+param *.rsu[4].mobility.x 130
+param *.rsu[4].mobility.y 206
+param *.rsu[4].mobility.z 0
+param *.rsu[5].mobility.x 130
+param *.rsu[5].mobility.y 186
+param *.rsu[5].mobility.z 0
+param *.rsu[6].mobility.x 130
+param *.rsu[6].mobility.y 156
+param *.rsu[6].mobility.z 0
+param *.rsu[7].mobility.x 156
+param *.rsu[7].mobility.y 156
+param *.rsu[7].mobility.z 0
+param *.rsu[8].mobility.x 186
+param *.rsu[8].mobility.y 156
+param *.rsu[8].mobility.z 0
+param *.rsu[9].mobility.x 216
+param *.rsu[9].mobility.y 156
+param *.rsu[9].mobility.z 0
+param *.rsu[10].mobility.x 256
+param *.rsu[10].mobility.y 146
+param *.rsu[10].mobility.z 0
+param *.rsu[11].mobility.x 256
+param *.rsu[11].mobility.y 106
+param *.rsu[11].mobility.z 0
+param *.rsu[12].mobility.x 256
+param *.rsu[12].mobility.y 66
+param *.rsu[12].mobility.z 0
+param *.rsu[*].applType "\"IntersectionApp\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons false
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 1s
+param *.rsu[*].appl.beaconUserPriority 1
+param *.rsu[*].appl.dataUserPriority 1
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 40m
+param *.connectionManager.drawMaxIntfDist true
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 10mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.sensitivity -89dBm
+param *.**.nic.phy80211p.useThermalNoise true
+param *.**.nic.phy80211p.thermalNoise -110dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].applType "\"IntersectionApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobilityType.debug true
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+
+scalar IntersectionScenario.node[4].nic.phy80211p busyTime 0.000368
+scalar IntersectionScenario.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[4].nic.mac1609_4 ReceivedBroadcasts 58
+scalar IntersectionScenario.node[4].nic.mac1609_4 SentPackets 23
+scalar IntersectionScenario.node[4].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[4].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[4].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[4].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[4].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[4].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[4].nic.mac1609_4 TimesIntoBackoff 26
+scalar IntersectionScenario.node[4].nic.mac1609_4 SlotsBackoff 45
+scalar IntersectionScenario.node[4].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[4].nic.mac1609_4 totalBusyTime 0.004583
+scalar IntersectionScenario.node[4].veinsmobility startTime 1
+scalar IntersectionScenario.node[4].veinsmobility totalTime 8
+scalar IntersectionScenario.node[4].veinsmobility stopTime 10
+scalar IntersectionScenario.node[4].veinsmobility minSpeed 1.8865424470045
+scalar IntersectionScenario.node[4].veinsmobility maxSpeed 9.718484536279
+scalar IntersectionScenario.node[4].veinsmobility totalDistance 75.614320422063
+scalar IntersectionScenario.node[4].veinsmobility totalCO2Emission 22.922682085697
+scalar IntersectionScenario.node[11].nic.phy80211p busyTime 0.00034635294117647
+scalar IntersectionScenario.node[11].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[11].nic.mac1609_4 ReceivedBroadcasts 111
+scalar IntersectionScenario.node[11].nic.mac1609_4 SentPackets 46
+scalar IntersectionScenario.node[11].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[11].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[11].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[11].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[11].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[11].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[11].nic.mac1609_4 TimesIntoBackoff 51
+scalar IntersectionScenario.node[11].nic.mac1609_4 SlotsBackoff 60
+scalar IntersectionScenario.node[11].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[11].nic.mac1609_4 totalBusyTime 0.008414
+scalar IntersectionScenario.node[11].veinsmobility startTime 4
+scalar IntersectionScenario.node[11].veinsmobility totalTime 16
+scalar IntersectionScenario.node[11].veinsmobility stopTime 21
+scalar IntersectionScenario.node[11].veinsmobility minSpeed 1.5883962160442
+scalar IntersectionScenario.node[11].veinsmobility maxSpeed 13.868383639711
+scalar IntersectionScenario.node[11].veinsmobility totalDistance 174.12923530908
+scalar IntersectionScenario.node[11].veinsmobility totalCO2Emission 58.87564028344
+scalar IntersectionScenario.node[14].nic.phy80211p busyTime 0.00054588235294118
+scalar IntersectionScenario.node[14].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[14].nic.mac1609_4 ReceivedBroadcasts 171
+scalar IntersectionScenario.node[14].nic.mac1609_4 SentPackets 48
+scalar IntersectionScenario.node[14].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[14].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[14].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[14].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[14].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[14].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[14].nic.mac1609_4 TimesIntoBackoff 50
+scalar IntersectionScenario.node[14].nic.mac1609_4 SlotsBackoff 72
+scalar IntersectionScenario.node[14].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[14].nic.mac1609_4 totalBusyTime 0.011904
+scalar IntersectionScenario.node[14].veinsmobility startTime 4
+scalar IntersectionScenario.node[14].veinsmobility totalTime 16
+scalar IntersectionScenario.node[14].veinsmobility stopTime 21
+scalar IntersectionScenario.node[14].veinsmobility minSpeed 2.0000768283615
+scalar IntersectionScenario.node[14].veinsmobility maxSpeed 13.846287378119
+scalar IntersectionScenario.node[14].veinsmobility totalDistance 173.48115744164
+scalar IntersectionScenario.node[14].veinsmobility totalCO2Emission 49.433463821039
+scalar IntersectionScenario.node[17].nic.phy80211p busyTime 0.00056376470588235
+scalar IntersectionScenario.node[17].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[17].nic.mac1609_4 ReceivedBroadcasts 177
+scalar IntersectionScenario.node[17].nic.mac1609_4 SentPackets 58
+scalar IntersectionScenario.node[17].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[17].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[17].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[17].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[17].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[17].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[17].nic.mac1609_4 TimesIntoBackoff 60
+scalar IntersectionScenario.node[17].nic.mac1609_4 SlotsBackoff 84
+scalar IntersectionScenario.node[17].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[17].nic.mac1609_4 totalBusyTime 0.012698
+scalar IntersectionScenario.node[17].veinsmobility startTime 7
+scalar IntersectionScenario.node[17].veinsmobility totalTime 16
+scalar IntersectionScenario.node[17].veinsmobility stopTime 24
+scalar IntersectionScenario.node[17].veinsmobility minSpeed 2.4323958121473
+scalar IntersectionScenario.node[17].veinsmobility maxSpeed 13.760560189732
+scalar IntersectionScenario.node[17].veinsmobility totalDistance 180.07777807638
+scalar IntersectionScenario.node[17].veinsmobility totalCO2Emission 52.725155471185
+scalar IntersectionScenario.node[20].nic.phy80211p busyTime 0.00035858823529412
+scalar IntersectionScenario.node[20].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[20].nic.mac1609_4 ReceivedBroadcasts 111
+scalar IntersectionScenario.node[20].nic.mac1609_4 SentPackets 53
+scalar IntersectionScenario.node[20].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[20].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[20].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[20].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[20].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[20].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[20].nic.mac1609_4 TimesIntoBackoff 58
+scalar IntersectionScenario.node[20].nic.mac1609_4 SlotsBackoff 77
+scalar IntersectionScenario.node[20].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[20].nic.mac1609_4 totalBusyTime 0.008965
+scalar IntersectionScenario.node[20].veinsmobility startTime 10
+scalar IntersectionScenario.node[20].veinsmobility totalTime 16
+scalar IntersectionScenario.node[20].veinsmobility stopTime 27
+scalar IntersectionScenario.node[20].veinsmobility minSpeed 2.5490558743477
+scalar IntersectionScenario.node[20].veinsmobility maxSpeed 13.542558705793
+scalar IntersectionScenario.node[20].veinsmobility totalDistance 178.86375918631
+scalar IntersectionScenario.node[20].veinsmobility totalCO2Emission 52.202960349537
+scalar IntersectionScenario.node[5].nic.phy80211p busyTime 0.00067076923076923
+scalar IntersectionScenario.node[5].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[5].nic.mac1609_4 ReceivedBroadcasts 333
+scalar IntersectionScenario.node[5].nic.mac1609_4 SentPackets 75
+scalar IntersectionScenario.node[5].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[5].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[5].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[5].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[5].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[5].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[5].nic.mac1609_4 TimesIntoBackoff 79
+scalar IntersectionScenario.node[5].nic.mac1609_4 SlotsBackoff 111
+scalar IntersectionScenario.node[5].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[5].nic.mac1609_4 totalBusyTime 0.021531
+scalar IntersectionScenario.node[5].veinsmobility startTime 1
+scalar IntersectionScenario.node[5].veinsmobility totalTime 25
+scalar IntersectionScenario.node[5].veinsmobility stopTime 27
+scalar IntersectionScenario.node[5].veinsmobility minSpeed 2.049248764175
+scalar IntersectionScenario.node[5].veinsmobility maxSpeed 13.889928044528
+scalar IntersectionScenario.node[5].veinsmobility totalDistance 274.41240154307
+scalar IntersectionScenario.node[5].veinsmobility totalCO2Emission 67.946081933444
+scalar IntersectionScenario.node[0].nic.phy80211p busyTime 0.00044303448275862
+scalar IntersectionScenario.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[0].nic.mac1609_4 ReceivedBroadcasts 244
+scalar IntersectionScenario.node[0].nic.mac1609_4 SentPackets 80
+scalar IntersectionScenario.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[0].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[0].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[0].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[0].nic.mac1609_4 TooLittleTime 2
+scalar IntersectionScenario.node[0].nic.mac1609_4 TimesIntoBackoff 82
+scalar IntersectionScenario.node[0].nic.mac1609_4 SlotsBackoff 128
+scalar IntersectionScenario.node[0].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[0].nic.mac1609_4 totalBusyTime 0.017232
+scalar IntersectionScenario.node[0].veinsmobility startTime 1
+scalar IntersectionScenario.node[0].veinsmobility totalTime 28
+scalar IntersectionScenario.node[0].veinsmobility stopTime 30
+scalar IntersectionScenario.node[0].veinsmobility minSpeed 1.7603376503801
+scalar IntersectionScenario.node[0].veinsmobility maxSpeed 13.78195376737
+scalar IntersectionScenario.node[0].veinsmobility totalDistance 306.50788635743
+scalar IntersectionScenario.node[0].veinsmobility totalCO2Emission 94.433869990655
+scalar IntersectionScenario.node[8].nic.phy80211p busyTime 0.0003632
+scalar IntersectionScenario.node[8].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[8].nic.mac1609_4 ReceivedBroadcasts 198
+scalar IntersectionScenario.node[8].nic.mac1609_4 SentPackets 81
+scalar IntersectionScenario.node[8].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[8].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[8].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[8].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[8].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[8].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[8].nic.mac1609_4 TimesIntoBackoff 115
+scalar IntersectionScenario.node[8].nic.mac1609_4 SlotsBackoff 134
+scalar IntersectionScenario.node[8].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[8].nic.mac1609_4 totalBusyTime 0.015345
+scalar IntersectionScenario.node[8].veinsmobility startTime 1
+scalar IntersectionScenario.node[8].veinsmobility totalTime 29
+scalar IntersectionScenario.node[8].veinsmobility stopTime 31
+scalar IntersectionScenario.node[8].veinsmobility minSpeed 0.14085020549971
+scalar IntersectionScenario.node[8].veinsmobility maxSpeed 13.840046946807
+scalar IntersectionScenario.node[8].veinsmobility totalDistance 274.36366576636
+scalar IntersectionScenario.node[8].veinsmobility totalCO2Emission 93.440737040336
+scalar IntersectionScenario.node[15].nic.phy80211p busyTime 0.00081837037037037
+scalar IntersectionScenario.node[15].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[15].nic.mac1609_4 ReceivedBroadcasts 425
+scalar IntersectionScenario.node[15].nic.mac1609_4 SentPackets 101
+scalar IntersectionScenario.node[15].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[15].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[15].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[15].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[15].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[15].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[15].nic.mac1609_4 TimesIntoBackoff 112
+scalar IntersectionScenario.node[15].nic.mac1609_4 SlotsBackoff 166
+scalar IntersectionScenario.node[15].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[15].nic.mac1609_4 totalBusyTime 0.027477
+scalar IntersectionScenario.node[15].veinsmobility startTime 4
+scalar IntersectionScenario.node[15].veinsmobility totalTime 26
+scalar IntersectionScenario.node[15].veinsmobility stopTime 31
+scalar IntersectionScenario.node[15].veinsmobility minSpeed 1.5853120716522
+scalar IntersectionScenario.node[15].veinsmobility maxSpeed 13.850411144514
+scalar IntersectionScenario.node[15].veinsmobility totalDistance 288.57400212164
+scalar IntersectionScenario.node[15].veinsmobility totalCO2Emission 73.090486337266
+scalar IntersectionScenario.node[2].nic.phy80211p busyTime 0.00060251428571428
+scalar IntersectionScenario.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[2].nic.mac1609_4 ReceivedBroadcasts 391
+scalar IntersectionScenario.node[2].nic.mac1609_4 SentPackets 105
+scalar IntersectionScenario.node[2].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[2].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[2].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[2].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[2].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[2].nic.mac1609_4 TimesIntoBackoff 115
+scalar IntersectionScenario.node[2].nic.mac1609_4 SlotsBackoff 144
+scalar IntersectionScenario.node[2].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[2].nic.mac1609_4 totalBusyTime 0.026777
+scalar IntersectionScenario.node[2].veinsmobility startTime 1
+scalar IntersectionScenario.node[2].veinsmobility totalTime 34
+scalar IntersectionScenario.node[2].veinsmobility stopTime 36
+scalar IntersectionScenario.node[2].veinsmobility minSpeed 0
+scalar IntersectionScenario.node[2].veinsmobility maxSpeed 13.517010440896
+scalar IntersectionScenario.node[2].veinsmobility totalDistance 263.40119444953
+scalar IntersectionScenario.node[2].veinsmobility totalCO2Emission 86.731900813099
+scalar IntersectionScenario.node[7].nic.phy80211p busyTime 0.00044342857142857
+scalar IntersectionScenario.node[7].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[7].nic.mac1609_4 ReceivedBroadcasts 288
+scalar IntersectionScenario.node[7].nic.mac1609_4 SentPackets 97
+scalar IntersectionScenario.node[7].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[7].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[7].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[7].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[7].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[7].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[7].nic.mac1609_4 TimesIntoBackoff 104
+scalar IntersectionScenario.node[7].nic.mac1609_4 SlotsBackoff 133
+scalar IntersectionScenario.node[7].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[7].nic.mac1609_4 totalBusyTime 0.020833
+scalar IntersectionScenario.node[7].veinsmobility startTime 1
+scalar IntersectionScenario.node[7].veinsmobility totalTime 34
+scalar IntersectionScenario.node[7].veinsmobility stopTime 36
+scalar IntersectionScenario.node[7].veinsmobility minSpeed 1.4846706941957
+scalar IntersectionScenario.node[7].veinsmobility maxSpeed 9.9827920861775
+scalar IntersectionScenario.node[7].veinsmobility totalDistance 184.46303139229
+scalar IntersectionScenario.node[7].veinsmobility totalCO2Emission 60.148709636886
+scalar IntersectionScenario.node[19].nic.phy80211p busyTime 0.0012739310344828
+scalar IntersectionScenario.node[19].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[19].nic.mac1609_4 ReceivedBroadcasts 724
+scalar IntersectionScenario.node[19].nic.mac1609_4 SentPackets 149
+scalar IntersectionScenario.node[19].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[19].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[19].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[19].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[19].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[19].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[19].nic.mac1609_4 TimesIntoBackoff 159
+scalar IntersectionScenario.node[19].nic.mac1609_4 SlotsBackoff 206
+scalar IntersectionScenario.node[19].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[19].nic.mac1609_4 totalBusyTime 0.044709
+scalar IntersectionScenario.node[19].veinsmobility startTime 10
+scalar IntersectionScenario.node[19].veinsmobility totalTime 28
+scalar IntersectionScenario.node[19].veinsmobility stopTime 39
+scalar IntersectionScenario.node[19].veinsmobility minSpeed 0.00022340631789725
+scalar IntersectionScenario.node[19].veinsmobility maxSpeed 13.391499106176
+scalar IntersectionScenario.node[19].veinsmobility totalDistance 169.08621573625
+scalar IntersectionScenario.node[19].veinsmobility totalCO2Emission 75.549102723361
+scalar IntersectionScenario.node[9].nic.phy80211p busyTime 0.00095063414634146
+scalar IntersectionScenario.node[9].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[9].nic.mac1609_4 ReceivedBroadcasts 756
+scalar IntersectionScenario.node[9].nic.mac1609_4 SentPackets 172
+scalar IntersectionScenario.node[9].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[9].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[9].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[9].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[9].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[9].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[9].nic.mac1609_4 TimesIntoBackoff 180
+scalar IntersectionScenario.node[9].nic.mac1609_4 SlotsBackoff 253
+scalar IntersectionScenario.node[9].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[9].nic.mac1609_4 totalBusyTime 0.04806
+scalar IntersectionScenario.node[9].veinsmobility startTime 1
+scalar IntersectionScenario.node[9].veinsmobility totalTime 40
+scalar IntersectionScenario.node[9].veinsmobility stopTime 42
+scalar IntersectionScenario.node[9].veinsmobility minSpeed 0
+scalar IntersectionScenario.node[9].veinsmobility maxSpeed 13.667817538031
+scalar IntersectionScenario.node[9].veinsmobility totalDistance 282.92238043121
+scalar IntersectionScenario.node[9].veinsmobility totalCO2Emission 118.99186995698
+scalar IntersectionScenario.node[10].nic.phy80211p busyTime 0.00066057142857143
+scalar IntersectionScenario.node[10].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[10].nic.mac1609_4 ReceivedBroadcasts 517
+scalar IntersectionScenario.node[10].nic.mac1609_4 SentPackets 134
+scalar IntersectionScenario.node[10].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[10].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[10].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[10].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[10].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[10].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[10].nic.mac1609_4 TimesIntoBackoff 138
+scalar IntersectionScenario.node[10].nic.mac1609_4 SlotsBackoff 179
+scalar IntersectionScenario.node[10].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[10].nic.mac1609_4 totalBusyTime 0.034982
+scalar IntersectionScenario.node[10].veinsmobility startTime 1
+scalar IntersectionScenario.node[10].veinsmobility totalTime 41
+scalar IntersectionScenario.node[10].veinsmobility stopTime 43
+scalar IntersectionScenario.node[10].veinsmobility minSpeed 0.18673357776174
+scalar IntersectionScenario.node[10].veinsmobility maxSpeed 9.9851443083491
+scalar IntersectionScenario.node[10].veinsmobility totalDistance 382.86909917376
+scalar IntersectionScenario.node[10].veinsmobility totalCO2Emission 93.564331174781
+scalar IntersectionScenario.node[1].nic.phy80211p busyTime 0.00076945454545454
+scalar IntersectionScenario.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[1].nic.mac1609_4 ReceivedBroadcasts 651
+scalar IntersectionScenario.node[1].nic.mac1609_4 SentPackets 176
+scalar IntersectionScenario.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[1].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[1].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[1].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[1].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[1].nic.mac1609_4 TimesIntoBackoff 183
+scalar IntersectionScenario.node[1].nic.mac1609_4 SlotsBackoff 266
+scalar IntersectionScenario.node[1].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[1].nic.mac1609_4 totalBusyTime 0.043184
+scalar IntersectionScenario.node[1].veinsmobility startTime 1
+scalar IntersectionScenario.node[1].veinsmobility totalTime 43
+scalar IntersectionScenario.node[1].veinsmobility stopTime 45
+scalar IntersectionScenario.node[1].veinsmobility minSpeed 0.00010469127079063
+scalar IntersectionScenario.node[1].veinsmobility maxSpeed 13.87186708237
+scalar IntersectionScenario.node[1].veinsmobility totalDistance 282.45601314698
+scalar IntersectionScenario.node[1].veinsmobility totalCO2Emission 111.41153708304
+scalar IntersectionScenario.node[3].nic.phy80211p busyTime 0.00045709090909091
+scalar IntersectionScenario.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[3].nic.mac1609_4 ReceivedBroadcasts 378
+scalar IntersectionScenario.node[3].nic.mac1609_4 SentPackets 131
+scalar IntersectionScenario.node[3].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[3].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[3].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[3].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[3].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[3].nic.mac1609_4 TimesIntoBackoff 135
+scalar IntersectionScenario.node[3].nic.mac1609_4 SlotsBackoff 180
+scalar IntersectionScenario.node[3].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[3].nic.mac1609_4 totalBusyTime 0.027235
+scalar IntersectionScenario.node[3].veinsmobility startTime 1
+scalar IntersectionScenario.node[3].veinsmobility totalTime 43
+scalar IntersectionScenario.node[3].veinsmobility stopTime 45
+scalar IntersectionScenario.node[3].veinsmobility minSpeed 0
+scalar IntersectionScenario.node[3].veinsmobility maxSpeed 13.818013388067
+scalar IntersectionScenario.node[3].veinsmobility totalDistance 313.27776620743
+scalar IntersectionScenario.node[3].veinsmobility totalCO2Emission 103.82248277036
+scalar IntersectionScenario.node[16].nic.phy80211p busyTime 0.00099390476190476
+scalar IntersectionScenario.node[16].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[16].nic.mac1609_4 ReceivedBroadcasts 811
+scalar IntersectionScenario.node[16].nic.mac1609_4 SentPackets 185
+scalar IntersectionScenario.node[16].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[16].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[16].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[16].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[16].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[16].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[16].nic.mac1609_4 TimesIntoBackoff 195
+scalar IntersectionScenario.node[16].nic.mac1609_4 SlotsBackoff 284
+scalar IntersectionScenario.node[16].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[16].nic.mac1609_4 totalBusyTime 0.051481
+scalar IntersectionScenario.node[16].veinsmobility startTime 7
+scalar IntersectionScenario.node[16].veinsmobility totalTime 41
+scalar IntersectionScenario.node[16].veinsmobility stopTime 49
+scalar IntersectionScenario.node[16].veinsmobility minSpeed 0
+scalar IntersectionScenario.node[16].veinsmobility maxSpeed 13.883895873288
+scalar IntersectionScenario.node[16].veinsmobility totalDistance 312.26353348617
+scalar IntersectionScenario.node[16].veinsmobility totalCO2Emission 115.12361792526
+scalar IntersectionScenario.node[18].nic.phy80211p busyTime 0.00055897872340425
+scalar IntersectionScenario.node[18].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[18].nic.mac1609_4 ReceivedBroadcasts 505
+scalar IntersectionScenario.node[18].nic.mac1609_4 SentPackets 146
+scalar IntersectionScenario.node[18].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[18].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[18].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[18].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[18].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[18].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[18].nic.mac1609_4 TimesIntoBackoff 153
+scalar IntersectionScenario.node[18].nic.mac1609_4 SlotsBackoff 225
+scalar IntersectionScenario.node[18].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[18].nic.mac1609_4 totalBusyTime 0.034178
+scalar IntersectionScenario.node[18].veinsmobility startTime 7
+scalar IntersectionScenario.node[18].veinsmobility totalTime 46
+scalar IntersectionScenario.node[18].veinsmobility stopTime 54
+scalar IntersectionScenario.node[18].veinsmobility minSpeed 1.7736266088166
+scalar IntersectionScenario.node[18].veinsmobility maxSpeed 13.877987908837
+scalar IntersectionScenario.node[18].veinsmobility totalDistance 550.4393776918
+scalar IntersectionScenario.node[18].veinsmobility totalCO2Emission 122.81606610976
+scalar IntersectionScenario.node[6].nic.phy80211p busyTime 0.00087577358490566
+scalar IntersectionScenario.node[6].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[6].nic.mac1609_4 ReceivedBroadcasts 896
+scalar IntersectionScenario.node[6].nic.mac1609_4 SentPackets 229
+scalar IntersectionScenario.node[6].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[6].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[6].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[6].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[6].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[6].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[6].nic.mac1609_4 TimesIntoBackoff 246
+scalar IntersectionScenario.node[6].nic.mac1609_4 SlotsBackoff 335
+scalar IntersectionScenario.node[6].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[6].nic.mac1609_4 totalBusyTime 0.058485
+scalar IntersectionScenario.node[6].veinsmobility startTime 1
+scalar IntersectionScenario.node[6].veinsmobility totalTime 52
+scalar IntersectionScenario.node[6].veinsmobility stopTime 54
+scalar IntersectionScenario.node[6].veinsmobility minSpeed 0
+scalar IntersectionScenario.node[6].veinsmobility maxSpeed 13.407891359888
+scalar IntersectionScenario.node[6].veinsmobility totalDistance 289.84064282621
+scalar IntersectionScenario.node[6].veinsmobility totalCO2Emission 110.16017874672
+scalar IntersectionScenario.node[12].nic.phy80211p busyTime 0.00077701818181818
+scalar IntersectionScenario.node[12].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[12].nic.mac1609_4 ReceivedBroadcasts 827
+scalar IntersectionScenario.node[12].nic.mac1609_4 SentPackets 213
+scalar IntersectionScenario.node[12].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[12].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[12].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[12].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[12].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[12].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[12].nic.mac1609_4 TimesIntoBackoff 228
+scalar IntersectionScenario.node[12].nic.mac1609_4 SlotsBackoff 322
+scalar IntersectionScenario.node[12].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[12].nic.mac1609_4 totalBusyTime 0.054053
+scalar IntersectionScenario.node[12].veinsmobility startTime 4
+scalar IntersectionScenario.node[12].veinsmobility totalTime 54
+scalar IntersectionScenario.node[12].veinsmobility stopTime 59
+scalar IntersectionScenario.node[12].veinsmobility minSpeed 0
+scalar IntersectionScenario.node[12].veinsmobility maxSpeed 13.832004013481
+scalar IntersectionScenario.node[12].veinsmobility totalDistance 331.60648387906
+scalar IntersectionScenario.node[12].veinsmobility totalCO2Emission 113.67283476102
+scalar IntersectionScenario.node[13].nic.phy80211p busyTime 0.00029714285714286
+scalar IntersectionScenario.node[13].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.node[13].nic.mac1609_4 ReceivedBroadcasts 344
+scalar IntersectionScenario.node[13].nic.mac1609_4 SentPackets 164
+scalar IntersectionScenario.node[13].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.node[13].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.node[13].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.node[13].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.node[13].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.node[13].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.node[13].nic.mac1609_4 TimesIntoBackoff 176
+scalar IntersectionScenario.node[13].nic.mac1609_4 SlotsBackoff 245
+scalar IntersectionScenario.node[13].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.node[13].nic.mac1609_4 totalBusyTime 0.027764
+scalar IntersectionScenario.node[13].veinsmobility startTime 4
+scalar IntersectionScenario.node[13].veinsmobility totalTime 62
+scalar IntersectionScenario.node[13].veinsmobility stopTime 67
+scalar IntersectionScenario.node[13].veinsmobility minSpeed 0.556123659062
+scalar IntersectionScenario.node[13].veinsmobility maxSpeed 13.87740537425
+scalar IntersectionScenario.node[13].veinsmobility totalDistance 504.69141350447
+scalar IntersectionScenario.node[13].veinsmobility totalCO2Emission 138.11385377534
+scalar IntersectionScenario.manager roiArea 0
+scalar IntersectionScenario.rsu[0].nic.phy80211p busyTime 7.6295513102214e-005
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 ReceivedBroadcasts 249
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 SlotsBackoff 295
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[0].nic.mac1609_4 totalBusyTime 0.028683
+scalar IntersectionScenario.rsu[1].nic.phy80211p busyTime 0.00015062058423381
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 ReceivedBroadcasts 492
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 SlotsBackoff 320
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[1].nic.mac1609_4 totalBusyTime 0.043771
+scalar IntersectionScenario.rsu[2].nic.phy80211p busyTime 8.8669888677677e-005
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 ReceivedBroadcasts 297
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 SlotsBackoff 315
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[2].nic.mac1609_4 totalBusyTime 0.031195
+scalar IntersectionScenario.rsu[3].nic.phy80211p busyTime 0.0001188570596675
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 ReceivedBroadcasts 413
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 SlotsBackoff 280
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[3].nic.mac1609_4 totalBusyTime 0.037323
+scalar IntersectionScenario.rsu[4].nic.phy80211p busyTime 0.00017647278288828
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 ReceivedBroadcasts 592
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 SlotsBackoff 279
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[4].nic.mac1609_4 totalBusyTime 0.049019
+scalar IntersectionScenario.rsu[5].nic.phy80211p busyTime 0.00022076831838771
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 ReceivedBroadcasts 719
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 SlotsBackoff 314
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[5].nic.mac1609_4 totalBusyTime 0.058011
+scalar IntersectionScenario.rsu[6].nic.phy80211p busyTime 0.0003165317981596
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 ReceivedBroadcasts 1156
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 SlotsBackoff 282
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[6].nic.mac1609_4 totalBusyTime 0.077451
+scalar IntersectionScenario.rsu[7].nic.phy80211p busyTime 0.00028208847251325
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 ReceivedBroadcasts 962
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 SentPackets 202
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 TimesIntoBackoff 202
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 SlotsBackoff 300
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[7].nic.mac1609_4 totalBusyTime 0.070394
+scalar IntersectionScenario.rsu[8].nic.phy80211p busyTime 0.00019980281582037
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 ReceivedBroadcasts 686
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 SentPackets 202
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 TimesIntoBackoff 202
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 SlotsBackoff 293
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[8].nic.mac1609_4 totalBusyTime 0.05369
+scalar IntersectionScenario.rsu[9].nic.phy80211p busyTime 0.00020051217492979
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 ReceivedBroadcasts 733
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 SlotsBackoff 276
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[9].nic.mac1609_4 totalBusyTime 0.053899
+scalar IntersectionScenario.rsu[10].nic.phy80211p busyTime 0.00011909351270397
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 ReceivedBroadcasts 414
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 SlotsBackoff 310
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[10].nic.mac1609_4 totalBusyTime 0.037371
+scalar IntersectionScenario.rsu[11].nic.phy80211p busyTime 0.00016811810893288
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 ReceivedBroadcasts 559
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 SlotsBackoff 333
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[11].nic.mac1609_4 totalBusyTime 0.047323
+scalar IntersectionScenario.rsu[12].nic.phy80211p busyTime 6.8413745219754e-005
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 ReceivedBroadcasts 218
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 SentPackets 203
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 SentAcknowledgements 0
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 SNIRLostPackets 0
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 RXTXLostPackets 0
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 TotalLostPackets 0
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 DroppedPacketsInMac 0
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 TooLittleTime 0
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 TimesIntoBackoff 203
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 SlotsBackoff 298
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 NumInternalContention 0
+scalar IntersectionScenario.rsu[12].nic.mac1609_4 totalBusyTime 0.027083
+

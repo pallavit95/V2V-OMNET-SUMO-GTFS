@@ -1,0 +1,15 @@
+CarID,RSUID,ServiceName,InteractionTime
+car1,rsu[0].mobility,service1,1.38058,0.380582619796,0
+car1,rsu[1].mobility,service2,1.79405,0.794050619796,0
+car1,rsu[1].mobility,service2,2.65831,0.658313615383,0
+car1,rsu[0].mobility,service1,2.97814,0.978138615383,0
+car1,rsu[1].mobility,service2,3.57181,0.57180760818,0
+car1,rsu[2].mobility,service3,6.37676,0.376760606543,0
+car1,rsu[2].mobility,service3,7.56068,0.560679618056,0
+car1,rsu[2].mobility,service3,8.75708,0.75707861006,0
+car1,rsu[3].mobility,service4,14.7752,0.775187638187,0
+car1,rsu[3].mobility,service4,15.1824,0.182363619905,0
+car1,rsu[4].mobility,service5,16.5749,0.574940602242,0
+car1,rsu[3].mobility,service4,16.5969,0.596926602242,0
+car1,rsu[4].mobility,service5,17.6585,0.658456588344,0
+car1,rsu[4].mobility,service5,18.4632,0.463188582431,0
